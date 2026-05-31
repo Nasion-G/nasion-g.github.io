@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Master Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Chess Master Club</h1>
+      <p>Made by Ece Sezgin, Nasion Golloshi, and Matias Llane.</p>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>The Game of Kings</h2>
+        <p>
+          Chess is one of the oldest and most popular board games, played by
+          millions of people worldwide. It is a game of pure strategy, with no
+          elements of luck involved.
+        </p>
+      </section>
+
+      <!-- The Chessboard -->
+      <section class="board-section">
+        <div id="chessboard"></div>
+      </section>
+
+      <!-- Registration Form -->
+      <section class="registration">
+        <h2>Join Our Community</h2>
+        <p>Sign up to receive updates about local tournaments.</p>
+        <form id="regForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="e.g. Grandmaster123"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="skill">Skill Level:</label>
+            <select id="skill">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced / Expert</option>
+            </select>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <div id="successMessage" class="hidden">
+          <p>
+            <strong>Success!</strong> Your registration was simulated
+            successfully. No data was sent to a server.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
